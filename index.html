@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nawod Keenagalla</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Me white circle.png" alt="Nawod keenagalla profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nawod keenagalla</h1>
+            <p class="section__text__p2">Civil Enginnering Undergraduate</p>
+            <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/resume-example.pdf')"
+                    >
+                    Download CV
+                </button>
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="location.href='./#contact'"
+                    >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/nawod-keenagalla-a90722215'">
+                <img 
+                src="./assets/youtube logo.png" 
+                alt="My YouTube channel" 
+                class="icon" 
+                onclick="location.href='https://www.youtube.com/@nawod_keenagalla'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/NEM me.png" 
+                alt="Profile picture" 
+                class="profile-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>Intership (6 months) <br>Site Civil Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Civil Engineering Undergraduate (third year) <br>University of Moratuwa</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>As a Civil Engineering undergraduate at the University of Moratuwa, I'm deeply immersed in the world of geotechnical engineering. Passionate about unraveling the complexities of soil mechanics, I'm actively involved in research within the Geotechnical Division. My portfolio reflects my dedication to pushing the boundaries of this dynamic field</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Experience</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Plaxis 2D</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Plaxis 3D</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Slope/W</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>HEC-HMS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>SAP2000</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>PROKON</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Practical Experience</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Soil filling</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Rock blasting</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Abutment construction</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Viaduct construction</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Beam casting</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Site management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Soil Filling.png" 
+                    alt="Project 1" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Soil Filling</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://medium.com/@nawodkeenagalla1/soil-filling-53226451da4b'">
+                        Medium
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://youtu.be/KXX4DyjEaKg?si=GkjTPDRQPwJkpBpz'">
+                        YouTube
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Rock Auguring.png" 
+                    alt="Project 2" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Rock Auguring</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://medium.com/@nawodkeenagalla1/rock-auguring-drilling-the-way-to-rock-blasting-be36f4601c94'">
+                        Medium
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://youtu.be/nEPlI24MLdQ?si=40EXZpyGMthxK0wr'">
+                        YouTube
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Concrete Slump Test.png" 
+                    alt="Project 3" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Slump Test</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://medium.com/@nawodkeenagalla1/concrete-slump-test-a2360902d024'">
+                        Medium
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://youtu.be/oSrxmiGOBj0?si=p3CuX5GNPQrK_D9f'">
+                        YouTube
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon email-icon">
+                <p><a href="mail to:nkeenagalla@gmail.com">nkeenagalla@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn icon" 
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/nawod-keenagalla-a90722215">LinkedIn</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nawod Keenagalla. All Rights Reserved.</p>
+    </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
